@@ -1,9 +1,6 @@
-version: '3.8'
-
 x-airflow-common: &airflow-common
   image: apache/airflow:2.8.1
-  environment:
-    &airflow-env
+  environment: &airflow-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__CORE__FERNET_KEY: 'rB1IuTbNOLRYSGK-Q8ENUiF0Cu1SrqenKN7hd99-4yE='
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
@@ -29,9 +26,11 @@ services:
       POSTGRES_DB: airflow
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+    restart: unless-stopped
 
   redis:
     image: redis:latest
+    restart: unless-stopped
 
   airflow-webserver:
     <<: *airflow-common
@@ -44,10 +43,12 @@ services:
       retries: 5
       start_period: 30s
       timeout: 10s
+    restart: unless-stopped
 
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
+    restart: unless-stopped
 
   airflow-worker:
     <<: *airflow-common
@@ -57,16 +58,19 @@ services:
       interval: 10s
       retries: 5
       timeout: 10s
+    restart: unless-stopped
 
   airflow-triggerer:
     <<: *airflow-common
     command: triggerer
+    restart: unless-stopped
 
   airflow-flower:
     <<: *airflow-common
     command: celery flower
     ports:
       - "5555:5555"
+    restart: unless-stopped
 
   airflow-init:
     <<: *airflow-common
