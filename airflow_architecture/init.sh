@@ -6,7 +6,7 @@ echo "=====> Dando permissões para as pastas da aplicação"
 cd /var/teste/airflow_architecture/docker
 
 # Permissão recursiva, pra garantir que tudo dentro tem permissão
-sudo chmod -R 775 dags plugins logs
+sudo chmod -R 775 dags logs
 
 # --- SERVIÇO DO AIRFLOW ---
 
