@@ -1,0 +1,36 @@
+[2025-06-23T19:36:47.205+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:36:33.781077+00:00 [queued]>
+[2025-06-23T19:36:47.225+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:36:33.781077+00:00 [queued]>
+[2025-06-23T19:36:47.226+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-23T19:36:47.314+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): enviar_para_elasticsearch> on 2025-06-23 19:36:33.781077+00:00
+[2025-06-23T19:36:47.322+0000] {standard_task_runner.py:60} INFO - Started process 159150 to run task
+[2025-06-23T19:36:47.328+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'relatorio_revendas_diario', 'enviar_para_elasticsearch', 'manual__2025-06-23T19:36:33.781077+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/DagEnviarRelatorioDesempenho.py', '--cfg-path', '/tmp/tmput0_y78q']
+[2025-06-23T19:36:47.332+0000] {standard_task_runner.py:88} INFO - Job 155: Subtask enviar_para_elasticsearch
+[2025-06-23T19:36:47.453+0000] {task_command.py:423} INFO - Running <TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:36:33.781077+00:00 [running]> on host 99f5714845f7
+[2025-06-23T19:36:47.740+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='relatorio_revendas_diario' AIRFLOW_CTX_TASK_ID='enviar_para_elasticsearch' AIRFLOW_CTX_EXECUTION_DATE='2025-06-23T19:36:33.781077+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-23T19:36:33.781077+00:00'
+[2025-06-23T19:36:47.877+0000] {_transport.py:335} INFO - HEAD http://10.1.10.52:9200/ [status:200 duration:0.005s]
+[2025-06-23T19:36:47.877+0000] {logging_mixin.py:188} INFO - Conectado no Elasticsearch, indexando dados...
+[2025-06-23T19:36:47.878+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Barbara Cristina Goedert (total: 16)
+[2025-06-23T19:36:48.390+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.509s]
+[2025-06-23T19:36:48.391+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Barbara Cristina Goedert. Documentos enviados: 16
+[2025-06-23T19:36:48.391+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Comercial Coletivo (total: 55)
+[2025-06-23T19:36:48.599+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.203s]
+[2025-06-23T19:36:48.601+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Comercial Coletivo. Documentos enviados: 55
+[2025-06-23T19:36:48.602+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Emerson Eduardo Mello (total: 57)
+[2025-06-23T19:36:48.823+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.213s]
+[2025-06-23T19:36:48.825+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Emerson Eduardo Mello. Documentos enviados: 57
+[2025-06-23T19:36:48.825+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Harry Laube Neto (total: 1)
+[2025-06-23T19:36:49.115+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.288s]
+[2025-06-23T19:36:49.116+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Harry Laube Neto. Documentos enviados: 1
+[2025-06-23T19:36:49.116+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Integração (total: 9)
+[2025-06-23T19:36:49.332+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.214s]
+[2025-06-23T19:36:49.334+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Integração. Documentos enviados: 9
+[2025-06-23T19:36:49.334+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Leticia Borges (total: 55)
+[2025-06-23T19:36:49.473+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.132s]
+[2025-06-23T19:36:49.474+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Leticia Borges. Documentos enviados: 55
+[2025-06-23T19:36:49.475+0000] {logging_mixin.py:188} INFO - Enviando dados para o gerente: Sabrina de Lima Saes (total: 9)
+[2025-06-23T19:36:49.707+0000] {_transport.py:335} INFO - PUT http://10.1.10.52:9200/_bulk [status:200 duration:0.230s]
+[2025-06-23T19:36:49.708+0000] {logging_mixin.py:188} INFO - Sucesso no bulk para o gerente Sabrina de Lima Saes. Documentos enviados: 9
+[2025-06-23T19:36:49.708+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-23T19:36:49.730+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=relatorio_revendas_diario, task_id=enviar_para_elasticsearch, execution_date=20250623T193633, start_date=20250623T193647, end_date=20250623T193649
+[2025-06-23T19:36:49.828+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-23T19:36:49.870+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

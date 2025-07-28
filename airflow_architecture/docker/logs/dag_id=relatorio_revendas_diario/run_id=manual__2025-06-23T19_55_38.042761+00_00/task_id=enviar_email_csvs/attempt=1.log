@@ -1,0 +1,20 @@
+[2025-06-23T19:55:53.806+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:55:38.042761+00:00 [queued]>
+[2025-06-23T19:55:53.833+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:55:38.042761+00:00 [queued]>
+[2025-06-23T19:55:53.834+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-23T19:55:53.892+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): enviar_email_csvs> on 2025-06-23 19:55:38.042761+00:00
+[2025-06-23T19:55:53.906+0000] {standard_task_runner.py:60} INFO - Started process 159884 to run task
+[2025-06-23T19:55:53.913+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'relatorio_revendas_diario', 'enviar_email_csvs', 'manual__2025-06-23T19:55:38.042761+00:00', '--job-id', '172', '--raw', '--subdir', 'DAGS_FOLDER/DagEnviarRelatorioDesempenho.py', '--cfg-path', '/tmp/tmpdk39yz5m']
+[2025-06-23T19:55:53.918+0000] {standard_task_runner.py:88} INFO - Job 172: Subtask enviar_email_csvs
+[2025-06-23T19:55:54.045+0000] {task_command.py:423} INFO - Running <TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:55:38.042761+00:00 [running]> on host 99f5714845f7
+[2025-06-23T19:55:54.295+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='relatorio_revendas_diario' AIRFLOW_CTX_TASK_ID='enviar_email_csvs' AIRFLOW_CTX_EXECUTION_DATE='2025-06-23T19:55:38.042761+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-23T19:55:38.042761+00:00'
+[2025-06-23T19:55:59.997+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para barbara.goedert@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP5P284CA0202.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:55:59.963Z 08DDB22B963F313F]')
+[2025-06-23T19:56:05.534+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para comercial.coletivo@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP6P284CA0076.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:56:05.503Z 08DDB235C96390A8]')
+[2025-06-23T19:56:11.443+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para emerson.mello@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP4P284CA0003.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:56:11.388Z 08DDB20B4EF910F0]')
+[2025-06-23T19:56:17.324+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para harry.neto@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP6P284CA0019.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:56:17.028Z 08DDB222B9E23990]')
+[2025-06-23T19:56:22.926+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para integração@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CPYP284CA0063.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:56:22.886Z 08DDB1F04F6FA01E]')
+[2025-06-23T19:56:28.608+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para leticia.borges@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP2PR80CA0261.lamprd80.prod.outlook.com 2025-06-23T19:56:28.560Z 08DDA7E99B8C4DA6]')
+[2025-06-23T19:56:34.299+0000] {logging_mixin.py:188} INFO - Erro ao enviar email para sabrina.saes@intelidata.inf.br: (535, b'5.7.3 Authentication unsuccessful [CP3P284CA0094.BRAP284.PROD.OUTLOOK.COM 2025-06-23T19:56:34.270Z 08DDB212D6104500]')
+[2025-06-23T19:56:34.300+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-23T19:56:34.317+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=relatorio_revendas_diario, task_id=enviar_email_csvs, execution_date=20250623T195538, start_date=20250623T195553, end_date=20250623T195634
+[2025-06-23T19:56:34.376+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-23T19:56:34.404+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

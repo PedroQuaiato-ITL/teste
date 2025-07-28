@@ -1,0 +1,15 @@
+[2025-06-24T17:27:57.782+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_atualizacao_desemenho_revenda.insert_data manual__2025-06-24T17:27:45.415736+00:00 [queued]>
+[2025-06-24T17:27:57.804+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_atualizacao_desemenho_revenda.insert_data manual__2025-06-24T17:27:45.415736+00:00 [queued]>
+[2025-06-24T17:27:57.805+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-24T17:27:57.922+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): insert_data> on 2025-06-24 17:27:45.415736+00:00
+[2025-06-24T17:27:57.929+0000] {standard_task_runner.py:60} INFO - Started process 206017 to run task
+[2025-06-24T17:27:57.935+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_atualizacao_desemenho_revenda', 'insert_data', 'manual__2025-06-24T17:27:45.415736+00:00', '--job-id', '211', '--raw', '--subdir', 'DAGS_FOLDER/DagAtualizacaoDesempenho.py', '--cfg-path', '/tmp/tmp5iry3ye1']
+[2025-06-24T17:27:57.937+0000] {standard_task_runner.py:88} INFO - Job 211: Subtask insert_data
+[2025-06-24T17:27:58.073+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_atualizacao_desemenho_revenda.insert_data manual__2025-06-24T17:27:45.415736+00:00 [running]> on host 99f5714845f7
+[2025-06-24T17:27:58.326+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_atualizacao_desemenho_revenda' AIRFLOW_CTX_TASK_ID='insert_data' AIRFLOW_CTX_EXECUTION_DATE='2025-06-24T17:27:45.415736+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-24T17:27:45.415736+00:00'
+[2025-06-24T17:27:58.432+0000] {base.py:83} INFO - Using connection ID 'dataset_comercial_database' for task execution.
+[2025-06-24T17:28:26.340+0000] {logging_mixin.py:188} INFO - 202 registros inseridos com sucesso.
+[2025-06-24T17:28:26.341+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-24T17:28:26.363+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_atualizacao_desemenho_revenda, task_id=insert_data, execution_date=20250624T172745, start_date=20250624T172757, end_date=20250624T172826
+[2025-06-24T17:28:26.443+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-24T17:28:26.482+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,16 @@
+[2025-06-23T19:30:00.365+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:29:46.609265+00:00 [queued]>
+[2025-06-23T19:30:00.381+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:29:46.609265+00:00 [queued]>
+[2025-06-23T19:30:00.382+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-23T19:30:00.451+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): enviar_para_elasticsearch> on 2025-06-23 19:29:46.609265+00:00
+[2025-06-23T19:30:00.463+0000] {standard_task_runner.py:60} INFO - Started process 158874 to run task
+[2025-06-23T19:30:00.468+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'relatorio_revendas_diario', 'enviar_para_elasticsearch', 'manual__2025-06-23T19:29:46.609265+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/DagEnviarRelatorioDesempenho.py', '--cfg-path', '/tmp/tmpswhwdhaj']
+[2025-06-23T19:30:00.472+0000] {standard_task_runner.py:88} INFO - Job 144: Subtask enviar_para_elasticsearch
+[2025-06-23T19:30:00.612+0000] {task_command.py:423} INFO - Running <TaskInstance: relatorio_revendas_diario.enviar_para_elasticsearch manual__2025-06-23T19:29:46.609265+00:00 [running]> on host 99f5714845f7
+[2025-06-23T19:30:00.810+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='relatorio_revendas_diario' AIRFLOW_CTX_TASK_ID='enviar_para_elasticsearch' AIRFLOW_CTX_EXECUTION_DATE='2025-06-23T19:29:46.609265+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-23T19:29:46.609265+00:00'
+[2025-06-23T19:30:00.855+0000] {_transport.py:335} INFO - HEAD http://10.1.10.52:9200/ [status:200 duration:0.007s]
+[2025-06-23T19:30:00.856+0000] {logging_mixin.py:188} INFO - Conectado no Elasticsearch, indexando dados...
+[2025-06-23T19:30:00.856+0000] {logging_mixin.py:188} INFO - Erro geral ao enviar dados para Elasticsearch: 'NoneType' object has no attribute 'items'
+[2025-06-23T19:30:00.857+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-23T19:30:00.884+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=relatorio_revendas_diario, task_id=enviar_para_elasticsearch, execution_date=20250623T192946, start_date=20250623T193000, end_date=20250623T193000
+[2025-06-23T19:30:00.962+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-23T19:30:01.059+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,13 @@
+[2025-07-17T04:00:21.693+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_analise_desempenho_revendas.realizar_calculos_desempenho scheduled__2025-07-16T04:00:00+00:00 [queued]>
+[2025-07-17T04:00:21.709+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_analise_desempenho_revendas.realizar_calculos_desempenho scheduled__2025-07-16T04:00:00+00:00 [queued]>
+[2025-07-17T04:00:21.709+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-07-17T04:00:21.767+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): realizar_calculos_desempenho> on 2025-07-16 04:00:00+00:00
+[2025-07-17T04:00:21.777+0000] {standard_task_runner.py:60} INFO - Started process 1361741 to run task
+[2025-07-17T04:00:21.784+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_analise_desempenho_revendas', 'realizar_calculos_desempenho', 'scheduled__2025-07-16T04:00:00+00:00', '--job-id', '549', '--raw', '--subdir', 'DAGS_FOLDER/DagAnaliseDesempenhoRevendas.py', '--cfg-path', '/tmp/tmp903wwggx']
+[2025-07-17T04:00:21.788+0000] {standard_task_runner.py:88} INFO - Job 549: Subtask realizar_calculos_desempenho
+[2025-07-17T04:00:22.158+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_analise_desempenho_revendas.realizar_calculos_desempenho scheduled__2025-07-16T04:00:00+00:00 [running]> on host 99f5714845f7
+[2025-07-17T04:00:22.359+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_analise_desempenho_revendas' AIRFLOW_CTX_TASK_ID='realizar_calculos_desempenho' AIRFLOW_CTX_EXECUTION_DATE='2025-07-16T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-16T04:00:00+00:00'
+[2025-07-17T04:00:22.472+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-17T04:00:22.489+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_analise_desempenho_revendas, task_id=realizar_calculos_desempenho, execution_date=20250716T040000, start_date=20250717T040021, end_date=20250717T040022
+[2025-07-17T04:00:22.558+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-17T04:00:22.845+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

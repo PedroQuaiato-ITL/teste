@@ -1,0 +1,13 @@
+[2025-07-18T04:00:08.580+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_analise_desempenho_revendas.tratar_dataframe_gnio scheduled__2025-07-17T04:00:00+00:00 [queued]>
+[2025-07-18T04:00:08.604+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_analise_desempenho_revendas.tratar_dataframe_gnio scheduled__2025-07-17T04:00:00+00:00 [queued]>
+[2025-07-18T04:00:08.605+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-07-18T04:00:08.721+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): tratar_dataframe_gnio> on 2025-07-17 04:00:00+00:00
+[2025-07-18T04:00:08.730+0000] {standard_task_runner.py:60} INFO - Started process 1413226 to run task
+[2025-07-18T04:00:08.736+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_analise_desempenho_revendas', 'tratar_dataframe_gnio', 'scheduled__2025-07-17T04:00:00+00:00', '--job-id', '556', '--raw', '--subdir', 'DAGS_FOLDER/DagAnaliseDesempenhoRevendas.py', '--cfg-path', '/tmp/tmpmf195yxk']
+[2025-07-18T04:00:08.741+0000] {standard_task_runner.py:88} INFO - Job 556: Subtask tratar_dataframe_gnio
+[2025-07-18T04:00:09.148+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_analise_desempenho_revendas.tratar_dataframe_gnio scheduled__2025-07-17T04:00:00+00:00 [running]> on host 99f5714845f7
+[2025-07-18T04:00:09.415+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_analise_desempenho_revendas' AIRFLOW_CTX_TASK_ID='tratar_dataframe_gnio' AIRFLOW_CTX_EXECUTION_DATE='2025-07-17T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-17T04:00:00+00:00'
+[2025-07-18T04:00:09.526+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-18T04:00:09.543+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_analise_desempenho_revendas, task_id=tratar_dataframe_gnio, execution_date=20250717T040000, start_date=20250718T040008, end_date=20250718T040009
+[2025-07-18T04:00:09.631+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-18T04:00:09.927+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

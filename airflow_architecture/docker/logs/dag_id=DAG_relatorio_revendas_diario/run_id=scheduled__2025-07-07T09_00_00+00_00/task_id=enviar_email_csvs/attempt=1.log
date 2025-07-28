@@ -1,0 +1,20 @@
+[2025-07-08T09:00:14.980+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_relatorio_revendas_diario.enviar_email_csvs scheduled__2025-07-07T09:00:00+00:00 [queued]>
+[2025-07-08T09:00:14.998+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_relatorio_revendas_diario.enviar_email_csvs scheduled__2025-07-07T09:00:00+00:00 [queued]>
+[2025-07-08T09:00:14.998+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-07-08T09:00:15.044+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): enviar_email_csvs> on 2025-07-07 09:00:00+00:00
+[2025-07-08T09:00:15.056+0000] {standard_task_runner.py:60} INFO - Started process 908738 to run task
+[2025-07-08T09:00:15.066+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_relatorio_revendas_diario', 'enviar_email_csvs', 'scheduled__2025-07-07T09:00:00+00:00', '--job-id', '426', '--raw', '--subdir', 'DAGS_FOLDER/DagEnviarRelatorioDesempenho.py', '--cfg-path', '/tmp/tmpiua3sx7i']
+[2025-07-08T09:00:15.075+0000] {standard_task_runner.py:88} INFO - Job 426: Subtask enviar_email_csvs
+[2025-07-08T09:00:15.222+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_relatorio_revendas_diario.enviar_email_csvs scheduled__2025-07-07T09:00:00+00:00 [running]> on host 99f5714845f7
+[2025-07-08T09:00:15.482+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_relatorio_revendas_diario' AIRFLOW_CTX_TASK_ID='enviar_email_csvs' AIRFLOW_CTX_EXECUTION_DATE='2025-07-07T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-07T09:00:00+00:00'
+[2025-07-08T09:00:19.209+0000] {logging_mixin.py:188} INFO - Email enviado para barbara.goedert@intelidata.inf.br
+[2025-07-08T09:00:20.954+0000] {logging_mixin.py:188} INFO - Email enviado para comercial.coletivo@intelidata.inf.br
+[2025-07-08T09:00:22.791+0000] {logging_mixin.py:188} INFO - Email enviado para emerson.mello@intelidata.inf.br
+[2025-07-08T09:00:25.270+0000] {logging_mixin.py:188} INFO - Email enviado para harry.laube@intelidata.inf.br
+[2025-07-08T09:00:27.353+0000] {logging_mixin.py:188} INFO - Email enviado para integração@intelidata.inf.br
+[2025-07-08T09:00:29.274+0000] {logging_mixin.py:188} INFO - Email enviado para leticia.borges@intelidata.inf.br
+[2025-07-08T09:00:31.379+0000] {logging_mixin.py:188} INFO - Email enviado para sabrina.lima@intelidata.inf.br
+[2025-07-08T09:00:31.380+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-08T09:00:31.397+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_relatorio_revendas_diario, task_id=enviar_email_csvs, execution_date=20250707T090000, start_date=20250708T090014, end_date=20250708T090031
+[2025-07-08T09:00:31.487+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-08T09:00:31.525+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

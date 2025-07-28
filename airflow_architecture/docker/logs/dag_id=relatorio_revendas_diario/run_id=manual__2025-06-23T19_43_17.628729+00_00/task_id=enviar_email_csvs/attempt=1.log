@@ -1,0 +1,14 @@
+[2025-06-23T19:43:32.398+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:43:17.628729+00:00 [queued]>
+[2025-06-23T19:43:32.414+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:43:17.628729+00:00 [queued]>
+[2025-06-23T19:43:32.415+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-23T19:43:32.554+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): enviar_email_csvs> on 2025-06-23 19:43:17.628729+00:00
+[2025-06-23T19:43:32.563+0000] {standard_task_runner.py:60} INFO - Started process 159411 to run task
+[2025-06-23T19:43:32.569+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'relatorio_revendas_diario', 'enviar_email_csvs', 'manual__2025-06-23T19:43:17.628729+00:00', '--job-id', '162', '--raw', '--subdir', 'DAGS_FOLDER/DagEnviarRelatorioDesempenho.py', '--cfg-path', '/tmp/tmpv3bjzs7t']
+[2025-06-23T19:43:32.575+0000] {standard_task_runner.py:88} INFO - Job 162: Subtask enviar_email_csvs
+[2025-06-23T19:43:32.883+0000] {task_command.py:423} INFO - Running <TaskInstance: relatorio_revendas_diario.enviar_email_csvs manual__2025-06-23T19:43:17.628729+00:00 [running]> on host 99f5714845f7
+[2025-06-23T19:43:33.389+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='relatorio_revendas_diario' AIRFLOW_CTX_TASK_ID='enviar_email_csvs' AIRFLOW_CTX_EXECUTION_DATE='2025-06-23T19:43:17.628729+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-23T19:43:17.628729+00:00'
+[2025-06-23T19:43:34.920+0000] {logging_mixin.py:188} INFO - Erro ao enviar os e-mails: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-237d83932dfsm91057615ad.30 - gsmtp')
+[2025-06-23T19:43:34.920+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-23T19:43:34.939+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=relatorio_revendas_diario, task_id=enviar_email_csvs, execution_date=20250623T194317, start_date=20250623T194332, end_date=20250623T194334
+[2025-06-23T19:43:35.229+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-23T19:43:35.258+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

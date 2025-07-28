@@ -1,0 +1,13 @@
+[2025-06-26T18:46:22.084+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_atualizacao_desemenho_revenda.organized_results_query manual__2025-06-26T18:46:16.355381+00:00 [queued]>
+[2025-06-26T18:46:22.100+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_atualizacao_desemenho_revenda.organized_results_query manual__2025-06-26T18:46:16.355381+00:00 [queued]>
+[2025-06-26T18:46:22.100+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-26T18:46:22.146+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): organized_results_query> on 2025-06-26 18:46:16.355381+00:00
+[2025-06-26T18:46:22.157+0000] {standard_task_runner.py:60} INFO - Started process 311665 to run task
+[2025-06-26T18:46:22.162+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_atualizacao_desemenho_revenda', 'organized_results_query', 'manual__2025-06-26T18:46:16.355381+00:00', '--job-id', '254', '--raw', '--subdir', 'DAGS_FOLDER/DagAtualizacaoDesempenho.py', '--cfg-path', '/tmp/tmpvgv0jh93']
+[2025-06-26T18:46:22.164+0000] {standard_task_runner.py:88} INFO - Job 254: Subtask organized_results_query
+[2025-06-26T18:46:22.305+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_atualizacao_desemenho_revenda.organized_results_query manual__2025-06-26T18:46:16.355381+00:00 [running]> on host 99f5714845f7
+[2025-06-26T18:46:22.526+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_atualizacao_desemenho_revenda' AIRFLOW_CTX_TASK_ID='organized_results_query' AIRFLOW_CTX_EXECUTION_DATE='2025-06-26T18:46:16.355381+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-26T18:46:16.355381+00:00'
+[2025-06-26T18:46:22.693+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-26T18:46:22.711+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_atualizacao_desemenho_revenda, task_id=organized_results_query, execution_date=20250626T184616, start_date=20250626T184622, end_date=20250626T184622
+[2025-06-26T18:46:22.778+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-26T18:46:22.837+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

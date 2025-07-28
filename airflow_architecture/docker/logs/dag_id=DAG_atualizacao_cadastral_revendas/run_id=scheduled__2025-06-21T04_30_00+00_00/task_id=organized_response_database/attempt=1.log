@@ -1,0 +1,229 @@
+[2025-06-22T04:30:05.699+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_atualizacao_cadastral_revendas.organized_response_database scheduled__2025-06-21T04:30:00+00:00 [queued]>
+[2025-06-22T04:30:05.714+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_atualizacao_cadastral_revendas.organized_response_database scheduled__2025-06-21T04:30:00+00:00 [queued]>
+[2025-06-22T04:30:05.714+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-06-22T04:30:05.777+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): organized_response_database> on 2025-06-21 04:30:00+00:00
+[2025-06-22T04:30:05.785+0000] {standard_task_runner.py:60} INFO - Started process 75344 to run task
+[2025-06-22T04:30:05.792+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'DAG_atualizacao_cadastral_revendas', 'organized_response_database', 'scheduled__2025-06-21T04:30:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/DagDatasetComercial.py', '--cfg-path', '/tmp/tmpon9ypc6o']
+[2025-06-22T04:30:05.798+0000] {standard_task_runner.py:88} INFO - Job 95: Subtask organized_response_database
+[2025-06-22T04:30:05.930+0000] {task_command.py:423} INFO - Running <TaskInstance: DAG_atualizacao_cadastral_revendas.organized_response_database scheduled__2025-06-21T04:30:00+00:00 [running]> on host 99f5714845f7
+[2025-06-22T04:30:06.129+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='DAG_atualizacao_cadastral_revendas' AIRFLOW_CTX_TASK_ID='organized_response_database' AIRFLOW_CTX_EXECUTION_DATE='2025-06-21T04:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-06-21T04:30:00+00:00'
+[2025-06-22T04:30:07.380+0000] {logging_mixin.py:188} INFO - Revenda A7 Soluções organizada com sucesso !
+[2025-06-22T04:30:08.613+0000] {logging_mixin.py:188} INFO - Revenda AB Soluções em TI organizada com sucesso !
+[2025-06-22T04:30:09.883+0000] {logging_mixin.py:188} INFO - Revenda Adonai Automação Comercial organizada com sucesso !
+[2025-06-22T04:30:11.098+0000] {logging_mixin.py:188} INFO - Revenda ADV SIG organizada com sucesso !
+[2025-06-22T04:30:12.280+0000] {logging_mixin.py:188} INFO - Revenda A e A Dist. de Informática - Softart organizada com sucesso !
+[2025-06-22T04:30:13.494+0000] {logging_mixin.py:188} INFO - Revenda Af Suporte organizada com sucesso !
+[2025-06-22T04:30:14.678+0000] {logging_mixin.py:188} INFO - Revenda Agedata Sistemas organizada com sucesso !
+[2025-06-22T04:30:16.025+0000] {logging_mixin.py:188} INFO - Revenda AIO Solucoes organizada com sucesso !
+[2025-06-22T04:30:17.324+0000] {logging_mixin.py:188} INFO - Revenda AllTecInfo organizada com sucesso !
+[2025-06-22T04:30:18.515+0000] {logging_mixin.py:188} INFO - Revenda Alpha Systemas e informática organizada com sucesso !
+[2025-06-22T04:30:19.781+0000] {logging_mixin.py:188} INFO - Revenda Alternativa Automação Comercial organizada com sucesso !
+[2025-06-22T04:30:20.975+0000] {logging_mixin.py:188} INFO - Revenda Amigo do Micro organizada com sucesso !
+[2025-06-22T04:30:21.437+0000] {logging_mixin.py:188} INFO - Revenda AND Consultores Associados organizada com sucesso !
+[2025-06-22T04:30:22.595+0000] {logging_mixin.py:188} INFO - Revenda APRN Soluções organizada com sucesso !
+[2025-06-22T04:30:23.793+0000] {logging_mixin.py:188} INFO - Revenda Ary Sistemas de Gestão e Informatica (RNS) organizada com sucesso !
+[2025-06-22T04:30:24.948+0000] {logging_mixin.py:188} INFO - Revenda Asteqesystem organizada com sucesso !
+[2025-06-22T04:30:26.140+0000] {logging_mixin.py:188} INFO - Revenda Atrium Sistemas organizada com sucesso !
+[2025-06-22T04:30:27.548+0000] {logging_mixin.py:188} INFO - Revenda Automac Digitron organizada com sucesso !
+[2025-06-22T04:30:28.737+0000] {logging_mixin.py:188} INFO - Revenda Automaquinas - Automação Comercial organizada com sucesso !
+[2025-06-22T04:30:30.118+0000] {logging_mixin.py:188} INFO - Revenda Autosyste Tecnologia e Inovação organizada com sucesso !
+[2025-06-22T04:30:31.341+0000] {logging_mixin.py:188} INFO - Revenda Autotech Informática organizada com sucesso !
+[2025-06-22T04:30:32.688+0000] {logging_mixin.py:188} INFO - Revenda Bellabyte organizada com sucesso !
+[2025-06-22T04:30:33.873+0000] {logging_mixin.py:188} INFO - Revenda Bitech organizada com sucesso !
+[2025-06-22T04:30:35.009+0000] {logging_mixin.py:188} INFO - Revenda Boldtsoft Sistemas organizada com sucesso !
+[2025-06-22T04:30:36.175+0000] {logging_mixin.py:188} INFO - Revenda BRAZ TI organizada com sucesso !
+[2025-06-22T04:30:37.507+0000] {logging_mixin.py:188} INFO - Revenda Brusoft Informatica organizada com sucesso !
+[2025-06-22T04:30:38.644+0000] {logging_mixin.py:188} INFO - Revenda Brvatech organizada com sucesso !
+[2025-06-22T04:30:40.024+0000] {logging_mixin.py:188} INFO - Revenda Canal Tecnico (Lumi) organizada com sucesso !
+[2025-06-22T04:30:41.157+0000] {logging_mixin.py:188} INFO - Revenda Casa das Impressoras organizada com sucesso !
+[2025-06-22T04:30:42.423+0000] {logging_mixin.py:188} INFO - Revenda CASTERS organizada com sucesso !
+[2025-06-22T04:30:43.568+0000] {logging_mixin.py:188} INFO - Revenda Centec Equipamentos organizada com sucesso !
+[2025-06-22T04:30:44.811+0000] {logging_mixin.py:188} INFO - Revenda CK Tech Consultoria organizada com sucesso !
+[2025-06-22T04:30:46.129+0000] {logging_mixin.py:188} INFO - Revenda Compass Tecnologia da Informação organizada com sucesso !
+[2025-06-22T04:30:47.289+0000] {logging_mixin.py:188} INFO - Revenda Compucenter Software organizada com sucesso !
+[2025-06-22T04:30:47.763+0000] {logging_mixin.py:188} INFO - Revenda Conexão Informática Ltda organizada com sucesso !
+[2025-06-22T04:30:48.990+0000] {logging_mixin.py:188} INFO - Revenda Connect System Soluções em Tecnologia organizada com sucesso !
+[2025-06-22T04:30:50.144+0000] {logging_mixin.py:188} INFO - Revenda Conte Certo Serviços organizada com sucesso !
+[2025-06-22T04:30:51.383+0000] {logging_mixin.py:188} INFO - Revenda Control Biz organizada com sucesso !
+[2025-06-22T04:30:52.601+0000] {logging_mixin.py:188} INFO - Revenda CTi - Centro Técnico de Informática organizada com sucesso !
+[2025-06-22T04:30:53.771+0000] {logging_mixin.py:188} INFO - Revenda D&A Automação Comercial organizada com sucesso !
+[2025-06-22T04:30:54.909+0000] {logging_mixin.py:188} INFO - Revenda DALTEC Automacao Comercial organizada com sucesso !
+[2025-06-22T04:30:56.348+0000] {logging_mixin.py:188} INFO - Revenda DataConta Gestão de Negócios organizada com sucesso !
+[2025-06-22T04:30:57.552+0000] {logging_mixin.py:188} INFO - Revenda Dataproxy organizada com sucesso !
+[2025-06-22T04:30:58.848+0000] {logging_mixin.py:188} INFO - Revenda DCODER organizada com sucesso !
+[2025-06-22T04:31:00.173+0000] {logging_mixin.py:188} INFO - Revenda D Data Soluções organizada com sucesso !
+[2025-06-22T04:31:01.545+0000] {logging_mixin.py:188} INFO - Revenda DGTEC organizada com sucesso !
+[2025-06-22T04:31:02.756+0000] {logging_mixin.py:188} INFO - Revenda Digito Informatica organizada com sucesso !
+[2025-06-22T04:31:04.035+0000] {logging_mixin.py:188} INFO - Revenda Dikoc Soluções em Software organizada com sucesso !
+[2025-06-22T04:31:05.159+0000] {logging_mixin.py:188} INFO - Revenda DMK Sistemas e Soluções - HSI organizada com sucesso !
+[2025-06-22T04:31:06.420+0000] {logging_mixin.py:188} INFO - Revenda DMZ Informatica organizada com sucesso !
+[2025-06-22T04:31:07.739+0000] {logging_mixin.py:188} INFO - Revenda Dolphin Consultoria organizada com sucesso !
+[2025-06-22T04:31:09.097+0000] {logging_mixin.py:188} INFO - Revenda DSM Consultoria em T.I. organizada com sucesso !
+[2025-06-22T04:31:10.467+0000] {logging_mixin.py:188} INFO - Revenda Duall Tech organizada com sucesso !
+[2025-06-22T04:31:11.657+0000] {logging_mixin.py:188} INFO - Revenda DWH Comercio de Alimentos organizada com sucesso !
+[2025-06-22T04:31:12.972+0000] {logging_mixin.py:188} INFO - Revenda Edcom Automação Comercial organizada com sucesso !
+[2025-06-22T04:31:14.241+0000] {logging_mixin.py:188} INFO - Revenda Eleve Tecnologia organizada com sucesso !
+[2025-06-22T04:31:15.470+0000] {logging_mixin.py:188} INFO - Revenda Emlink Solucoes Empresariais organizada com sucesso !
+[2025-06-22T04:31:16.633+0000] {logging_mixin.py:188} INFO - Revenda Exatop Certificação Digital e Sistemas organizada com sucesso !
+[2025-06-22T04:31:17.847+0000] {logging_mixin.py:188} INFO - Revenda Exodus Informática organizada com sucesso !
+[2025-06-22T04:31:19.008+0000] {logging_mixin.py:188} INFO - Revenda Extrema Software de Gestão organizada com sucesso !
+[2025-06-22T04:31:20.220+0000] {logging_mixin.py:188} INFO - Revenda F5 Suporte e Automacão Comercial organizada com sucesso !
+[2025-06-22T04:31:21.382+0000] {logging_mixin.py:188} INFO - Revenda Facilita Sistemas organizada com sucesso !
+[2025-06-22T04:31:21.856+0000] {logging_mixin.py:188} INFO - Revenda Facilsys organizada com sucesso !
+[2025-06-22T04:31:23.150+0000] {logging_mixin.py:188} INFO - Revenda F & F Soluções Empresariais organizada com sucesso !
+[2025-06-22T04:31:24.371+0000] {logging_mixin.py:188} INFO - Revenda FKSIS - Sistemas de Gestão organizada com sucesso !
+[2025-06-22T04:31:25.617+0000] {logging_mixin.py:188} INFO - Revenda FlorySoftt organizada com sucesso !
+[2025-06-22T04:31:26.835+0000] {logging_mixin.py:188} INFO - Revenda Fn Info House organizada com sucesso !
+[2025-06-22T04:31:27.967+0000] {logging_mixin.py:188} INFO - Revenda FS Informatica organizada com sucesso !
+[2025-06-22T04:31:29.375+0000] {logging_mixin.py:188} INFO - Revenda Fusion Sistemas e Informatica organizada com sucesso !
+[2025-06-22T04:31:30.557+0000] {logging_mixin.py:188} INFO - Revenda Gilmaq Automação Comercial organizada com sucesso !
+[2025-06-22T04:31:31.709+0000] {logging_mixin.py:188} INFO - Revenda GM Soluções em Informática organizada com sucesso !
+[2025-06-22T04:31:32.919+0000] {logging_mixin.py:188} INFO - Revenda Grupo GUUW organizada com sucesso !
+[2025-06-22T04:31:33.392+0000] {logging_mixin.py:188} INFO - Revenda Guaxutec organizada com sucesso !
+[2025-06-22T04:31:34.643+0000] {logging_mixin.py:188} INFO - Revenda HSI Automação Comercial organizada com sucesso !
+[2025-06-22T04:31:36.388+0000] {logging_mixin.py:188} INFO - Revenda HWC Soluções organizada com sucesso !
+[2025-06-22T04:31:37.618+0000] {logging_mixin.py:188} INFO - Revenda I7 Automação Comercial organizada com sucesso !
+[2025-06-22T04:31:38.803+0000] {logging_mixin.py:188} INFO - Revenda Ideal Soluções Empresariais organizada com sucesso !
+[2025-06-22T04:31:39.959+0000] {logging_mixin.py:188} INFO - Revenda ID Tecnologia organizada com sucesso !
+[2025-06-22T04:31:41.241+0000] {logging_mixin.py:188} INFO - Revenda IFFI Soluções organizada com sucesso !
+[2025-06-22T04:31:42.784+0000] {logging_mixin.py:188} INFO - Revenda IG TEC organizada com sucesso !
+[2025-06-22T04:31:43.929+0000] {logging_mixin.py:188} INFO - Revenda INFOPRINTER organizada com sucesso !
+[2025-06-22T04:31:45.242+0000] {logging_mixin.py:188} INFO - Revenda INFORMIT organizada com sucesso !
+[2025-06-22T04:31:46.419+0000] {logging_mixin.py:188} INFO - Revenda Infor Serviços organizada com sucesso !
+[2025-06-22T04:31:47.672+0000] {logging_mixin.py:188} INFO - Revenda Infortec Automacao Comercial organizada com sucesso !
+[2025-06-22T04:31:48.912+0000] {logging_mixin.py:188} INFO - Revenda Infotek organizada com sucesso !
+[2025-06-22T04:31:50.065+0000] {logging_mixin.py:188} INFO - Revenda Innovati Tecnologia (INW Store) organizada com sucesso !
+[2025-06-22T04:31:51.218+0000] {logging_mixin.py:188} INFO - Revenda Inova Software organizada com sucesso !
+[2025-06-22T04:31:52.753+0000] {logging_mixin.py:188} INFO - Revenda Inspire Consult & Informatica  organizada com sucesso !
+[2025-06-22T04:31:53.917+0000] {logging_mixin.py:188} INFO - Revenda Inteltix Tecnologia (Center) organizada com sucesso !
+[2025-06-22T04:31:55.313+0000] {logging_mixin.py:188} INFO - Revenda J7 Automação Comercial - System HD organizada com sucesso !
+[2025-06-22T04:31:56.600+0000] {logging_mixin.py:188} INFO - Revenda Jann Informatica organizada com sucesso !
+[2025-06-22T04:31:57.788+0000] {logging_mixin.py:188} INFO - Revenda JB Tecnologia organizada com sucesso !
+[2025-06-22T04:31:59.176+0000] {logging_mixin.py:188} INFO - Revenda J & E Soluções organizada com sucesso !
+[2025-06-22T04:32:00.397+0000] {logging_mixin.py:188} INFO - Revenda JExpress organizada com sucesso !
+[2025-06-22T04:32:01.818+0000] {logging_mixin.py:188} INFO - Revenda J F Soluções Informatica organizada com sucesso !
+[2025-06-22T04:32:03.029+0000] {logging_mixin.py:188} INFO - Revenda J F Tech Tecnologia & Sistemas organizada com sucesso !
+[2025-06-22T04:32:04.346+0000] {logging_mixin.py:188} INFO - Revenda JHLS Automação Comercial organizada com sucesso !
+[2025-06-22T04:32:06.472+0000] {logging_mixin.py:188} INFO - Revenda Jinsei Contabilidade organizada com sucesso !
+[2025-06-22T04:32:07.635+0000] {logging_mixin.py:188} INFO - Revenda JJ Serviços organizada com sucesso !
+[2025-06-22T04:32:08.872+0000] {logging_mixin.py:188} INFO - Revenda JM Informatica organizada com sucesso !
+[2025-06-22T04:32:10.042+0000] {logging_mixin.py:188} INFO - Revenda JP Automação Comercial organizada com sucesso !
+[2025-06-22T04:32:11.325+0000] {logging_mixin.py:188} INFO - Revenda JSR Automação Comercial  organizada com sucesso !
+[2025-06-22T04:32:12.474+0000] {logging_mixin.py:188} INFO - Revenda Kernel Sistemas organizada com sucesso !
+[2025-06-22T04:32:14.572+0000] {logging_mixin.py:188} INFO - Revenda KMCI Tecnologia em Automação organizada com sucesso !
+[2025-06-22T04:32:15.773+0000] {logging_mixin.py:188} INFO - Revenda Komputronic do Brasil organizada com sucesso !
+[2025-06-22T04:32:16.997+0000] {logging_mixin.py:188} INFO - Revenda KSC Sistemas organizada com sucesso !
+[2025-06-22T04:32:18.183+0000] {logging_mixin.py:188} INFO - Revenda L&D Comercio e Tecnologia organizada com sucesso !
+[2025-06-22T04:32:19.581+0000] {logging_mixin.py:188} INFO - Revenda LD Tech organizada com sucesso !
+[2025-06-22T04:32:20.783+0000] {logging_mixin.py:188} INFO - Revenda LF Sistemas organizada com sucesso !
+[2025-06-22T04:32:21.945+0000] {logging_mixin.py:188} INFO - Revenda LiderTech organizada com sucesso !
+[2025-06-22T04:32:23.101+0000] {logging_mixin.py:188} INFO - Revenda Life Sistemas  organizada com sucesso !
+[2025-06-22T04:32:24.444+0000] {logging_mixin.py:188} INFO - Revenda LL Tecnologia organizada com sucesso !
+[2025-06-22T04:32:25.765+0000] {logging_mixin.py:188} INFO - Revenda LMD Sistemas organizada com sucesso !
+[2025-06-22T04:32:26.979+0000] {logging_mixin.py:188} INFO - Revenda Logitec 2000 Informatica organizada com sucesso !
+[2025-06-22T04:32:28.206+0000] {logging_mixin.py:188} INFO - Revenda Macmos organizada com sucesso !
+[2025-06-22T04:32:29.367+0000] {logging_mixin.py:188} INFO - Revenda Mape Informatica organizada com sucesso !
+[2025-06-22T04:32:30.597+0000] {logging_mixin.py:188} INFO - Revenda Marcka Informática e Sistemas organizada com sucesso !
+[2025-06-22T04:32:31.906+0000] {logging_mixin.py:188} INFO - Revenda Matechinfo organizada com sucesso !
+[2025-06-22T04:32:33.049+0000] {logging_mixin.py:188} INFO - Revenda MB Tecnologia organizada com sucesso !
+[2025-06-22T04:32:34.187+0000] {logging_mixin.py:188} INFO - Revenda MC2 Tecnologia organizada com sucesso !
+[2025-06-22T04:32:35.323+0000] {logging_mixin.py:188} INFO - Revenda MCR Sistemas (RS-AMX) organizada com sucesso !
+[2025-06-22T04:32:37.220+0000] {logging_mixin.py:188} INFO - Revenda MD Tech Automação organizada com sucesso !
+[2025-06-22T04:32:38.433+0000] {logging_mixin.py:188} INFO - Revenda Megasoft Informatica organizada com sucesso !
+[2025-06-22T04:32:39.701+0000] {logging_mixin.py:188} INFO - Revenda Mercantec Soluções organizada com sucesso !
+[2025-06-22T04:32:40.865+0000] {logging_mixin.py:188} INFO - Revenda Mikrox "Somadatta" organizada com sucesso !
+[2025-06-22T04:32:42.218+0000] {logging_mixin.py:188} INFO - Revenda M. Nobre (Terabyte) organizada com sucesso !
+[2025-06-22T04:32:43.432+0000] {logging_mixin.py:188} INFO - Revenda MRsis Automação organizada com sucesso !
+[2025-06-22T04:32:44.592+0000] {logging_mixin.py:188} INFO - Revenda M&R Soluções - Grupo ATL organizada com sucesso !
+[2025-06-22T04:32:45.896+0000] {logging_mixin.py:188} INFO - Revenda Multi Soft organizada com sucesso !
+[2025-06-22T04:32:47.144+0000] {logging_mixin.py:188} INFO - Revenda NewCompras.com.br organizada com sucesso !
+[2025-06-22T04:32:48.378+0000] {logging_mixin.py:188} INFO - Revenda NEWTEF Automação organizada com sucesso !
+[2025-06-22T04:32:49.556+0000] {logging_mixin.py:188} INFO - Revenda Next Store organizada com sucesso !
+[2025-06-22T04:32:50.776+0000] {logging_mixin.py:188} INFO - Revenda Nova Loja organizada com sucesso !
+[2025-06-22T04:32:52.048+0000] {logging_mixin.py:188} INFO - Revenda NovaPC organizada com sucesso !
+[2025-06-22T04:32:53.321+0000] {logging_mixin.py:188} INFO - Revenda Optimus - Gestão organizada com sucesso !
+[2025-06-22T04:32:55.295+0000] {logging_mixin.py:188} INFO - Revenda Otimizer Consultoria em Sistemas organizada com sucesso !
+[2025-06-22T04:32:55.757+0000] {logging_mixin.py:188} INFO - Revenda Otimize Soluções organizada com sucesso !
+[2025-06-22T04:32:56.958+0000] {logging_mixin.py:188} INFO - Revenda P21 Software organizada com sucesso !
+[2025-06-22T04:32:58.141+0000] {logging_mixin.py:188} INFO - Revenda PALM Soluções organizada com sucesso !
+[2025-06-22T04:32:59.388+0000] {logging_mixin.py:188} INFO - Revenda Parceria Informatica organizada com sucesso !
+[2025-06-22T04:33:00.743+0000] {logging_mixin.py:188} INFO - Revenda PDV Automação organizada com sucesso !
+[2025-06-22T04:33:02.037+0000] {logging_mixin.py:188} INFO - Revenda PEG Informatica organizada com sucesso !
+[2025-06-22T04:33:02.508+0000] {logging_mixin.py:188} INFO - Revenda Piramide Automação e Informatica organizada com sucesso !
+[2025-06-22T04:33:03.848+0000] {logging_mixin.py:188} INFO - Revenda Plus Solutions organizada com sucesso !
+[2025-06-22T04:33:05.019+0000] {logging_mixin.py:188} INFO - Revenda Ponte organizada com sucesso !
+[2025-06-22T04:33:06.156+0000] {logging_mixin.py:188} INFO - Revenda Pratic Informática organizada com sucesso !
+[2025-06-22T04:33:07.375+0000] {logging_mixin.py:188} INFO - Revenda PROFISC - Consultoria  organizada com sucesso !
+[2025-06-22T04:33:07.841+0000] {logging_mixin.py:188} INFO - Erro no get_geolocalization: Expecting value: line 1 column 1 (char 0)
+[2025-06-22T04:33:07.843+0000] {logging_mixin.py:188} INFO - Revenda Pryamos organizada com sucesso !
+[2025-06-22T04:33:09.022+0000] {logging_mixin.py:188} INFO - Revenda Quality Automação e Recargas organizada com sucesso !
+[2025-06-22T04:33:10.273+0000] {logging_mixin.py:188} INFO - Revenda Rafah Soluções em Sistema organizada com sucesso !
+[2025-06-22T04:33:11.464+0000] {logging_mixin.py:188} INFO - Revenda RC Automação organizada com sucesso !
+[2025-06-22T04:33:12.659+0000] {logging_mixin.py:188} INFO - Revenda RCM Tecnologia organizada com sucesso !
+[2025-06-22T04:33:13.873+0000] {logging_mixin.py:188} INFO - Revenda RedeEllo organizada com sucesso !
+[2025-06-22T04:33:15.064+0000] {logging_mixin.py:188} INFO - Revenda Rieger Consultoria e Serviços  organizada com sucesso !
+[2025-06-22T04:33:16.278+0000] {logging_mixin.py:188} INFO - Revenda RKS Tecnologia organizada com sucesso !
+[2025-06-22T04:33:17.609+0000] {logging_mixin.py:188} INFO - Revenda Rondoniatec Sistemas e Soluções organizada com sucesso !
+[2025-06-22T04:33:19.021+0000] {logging_mixin.py:188} INFO - Revenda Royal Ti organizada com sucesso !
+[2025-06-22T04:33:20.225+0000] {logging_mixin.py:188} INFO - Revenda RPD Tech Soluções em T.I. organizada com sucesso !
+[2025-06-22T04:33:21.426+0000] {logging_mixin.py:188} INFO - Revenda RPDV Soluções em Tecnologia organizada com sucesso !
+[2025-06-22T04:33:22.602+0000] {logging_mixin.py:188} INFO - Revenda RS Informatica organizada com sucesso !
+[2025-06-22T04:33:23.763+0000] {logging_mixin.py:188} INFO - Revenda Rtek organizada com sucesso !
+[2025-06-22T04:33:24.952+0000] {logging_mixin.py:188} INFO - Revenda SDN Sistemas de Gestão organizada com sucesso !
+[2025-06-22T04:33:27.179+0000] {logging_mixin.py:188} INFO - Revenda Seed Tecnologia organizada com sucesso !
+[2025-06-22T04:33:28.346+0000] {logging_mixin.py:188} INFO - Revenda Shopseg Sistemas organizada com sucesso !
+[2025-06-22T04:33:29.561+0000] {logging_mixin.py:188} INFO - Revenda Sig Sistemas Corporativos organizada com sucesso !
+[2025-06-22T04:33:30.825+0000] {logging_mixin.py:188} INFO - Revenda Sistech Sistemas organizada com sucesso !
+[2025-06-22T04:33:32.231+0000] {logging_mixin.py:188} INFO - Revenda Sistema Completo organizada com sucesso !
+[2025-06-22T04:33:33.521+0000] {logging_mixin.py:188} INFO - Revenda Sistema Uniplus - Vitória da Conquista organizada com sucesso !
+[2025-06-22T04:33:33.995+0000] {logging_mixin.py:188} INFO - Revenda Skill Automação Comercial organizada com sucesso !
+[2025-06-22T04:33:35.202+0000] {logging_mixin.py:188} INFO - Revenda SM10 Sistemas de Gestão e Automação Comercial  (AM10) organizada com sucesso !
+[2025-06-22T04:33:36.422+0000] {logging_mixin.py:188} INFO - Revenda Smith Tecnologias organizada com sucesso !
+[2025-06-22T04:33:37.639+0000] {logging_mixin.py:188} INFO - Revenda SMQ Tecnologia organizada com sucesso !
+[2025-06-22T04:33:38.898+0000] {logging_mixin.py:188} INFO - Revenda Softech Tecnologia organizada com sucesso !
+[2025-06-22T04:33:40.106+0000] {logging_mixin.py:188} INFO - Revenda SoftGadol organizada com sucesso !
+[2025-06-22T04:33:41.273+0000] {logging_mixin.py:188} INFO - Revenda Softkore organizada com sucesso !
+[2025-06-22T04:33:42.489+0000] {logging_mixin.py:188} INFO - Revenda Softmaq organizada com sucesso !
+[2025-06-22T04:33:43.775+0000] {logging_mixin.py:188} INFO - Revenda Solem Tecnologia organizada com sucesso !
+[2025-06-22T04:33:44.242+0000] {logging_mixin.py:188} INFO - Revenda Sonaglio Automação organizada com sucesso !
+[2025-06-22T04:33:45.397+0000] {logging_mixin.py:188} INFO - Revenda Sonsun organizada com sucesso !
+[2025-06-22T04:33:46.606+0000] {logging_mixin.py:188} INFO - Revenda Sophos Projetos organizada com sucesso !
+[2025-06-22T04:33:47.765+0000] {logging_mixin.py:188} INFO - Revenda Sparta Gestão e Contabilidade - DEOCLESYSTEM organizada com sucesso !
+[2025-06-22T04:33:48.957+0000] {logging_mixin.py:188} INFO - Revenda Speed Automação Comercial organizada com sucesso !
+[2025-06-22T04:33:50.172+0000] {logging_mixin.py:188} INFO - Revenda SS Informatica - Bahia organizada com sucesso !
+[2025-06-22T04:33:51.506+0000] {logging_mixin.py:188} INFO - Revenda SS Informática - Maranhão organizada com sucesso !
+[2025-06-22T04:33:52.673+0000] {logging_mixin.py:188} INFO - Revenda Syscom Sistemas organizada com sucesso !
+[2025-06-22T04:33:53.930+0000] {logging_mixin.py:188} INFO - Revenda SYSFOUR - Intelligent Systems organizada com sucesso !
+[2025-06-22T04:33:54.394+0000] {logging_mixin.py:188} INFO - Revenda System Bella Automação Comercial organizada com sucesso !
+[2025-06-22T04:33:55.570+0000] {logging_mixin.py:188} INFO - Revenda TB Automação e Informática organizada com sucesso !
+[2025-06-22T04:33:56.762+0000] {logging_mixin.py:188} INFO - Revenda TC Maquinas organizada com sucesso !
+[2025-06-22T04:33:57.917+0000] {logging_mixin.py:188} INFO - Revenda Technoside Informatica organizada com sucesso !
+[2025-06-22T04:33:59.150+0000] {logging_mixin.py:188} INFO - Revenda Tecmicro Informática organizada com sucesso !
+[2025-06-22T04:34:00.438+0000] {logging_mixin.py:188} INFO - Revenda Tecnoinfo organizada com sucesso !
+[2025-06-22T04:34:01.705+0000] {logging_mixin.py:188} INFO - Revenda TECSOLUTION organizada com sucesso !
+[2025-06-22T04:34:02.968+0000] {logging_mixin.py:188} INFO - Revenda Tefcom organizada com sucesso !
+[2025-06-22T04:34:04.216+0000] {logging_mixin.py:188} INFO - Revenda TFA Tecnologia e Soluções  organizada com sucesso !
+[2025-06-22T04:34:05.418+0000] {logging_mixin.py:188} INFO - Revenda TI-Brasil Sistemas organizada com sucesso !
+[2025-06-22T04:34:06.821+0000] {logging_mixin.py:188} INFO - Revenda Trends Solutions organizada com sucesso !
+[2025-06-22T04:34:07.961+0000] {logging_mixin.py:188} INFO - Revenda TS TECH organizada com sucesso !
+[2025-06-22T04:34:09.178+0000] {logging_mixin.py:188} INFO - Revenda Unisoft Sistemas ** Hardtech organizada com sucesso !
+[2025-06-22T04:34:10.389+0000] {logging_mixin.py:188} INFO - Revenda Unitek Soluções organizada com sucesso !
+[2025-06-22T04:34:11.796+0000] {logging_mixin.py:188} INFO - Revenda Uniup Sistema - Automação e CFTV organizada com sucesso !
+[2025-06-22T04:34:12.954+0000] {logging_mixin.py:188} INFO - Revenda Universal Automação Comercial  organizada com sucesso !
+[2025-06-22T04:34:14.258+0000] {logging_mixin.py:188} INFO - Revenda Universo Sistemas organizada com sucesso !
+[2025-06-22T04:34:15.483+0000] {logging_mixin.py:188} INFO - Revenda Valor Tecnologia organizada com sucesso !
+[2025-06-22T04:34:16.685+0000] {logging_mixin.py:188} INFO - Revenda VGI TECHNOLOGY organizada com sucesso !
+[2025-06-22T04:34:17.964+0000] {logging_mixin.py:188} INFO - Revenda Via Nova Soluções em Tecnologia organizada com sucesso !
+[2025-06-22T04:34:19.133+0000] {logging_mixin.py:188} INFO - Revenda Virtual Informatica_MG organizada com sucesso !
+[2025-06-22T04:34:20.403+0000] {logging_mixin.py:188} INFO - Revenda Virtual Sistemas_SC organizada com sucesso !
+[2025-06-22T04:34:21.887+0000] {logging_mixin.py:188} INFO - Revenda VPN Solucoes em Informatica organizada com sucesso !
+[2025-06-22T04:34:23.085+0000] {logging_mixin.py:188} INFO - Revenda Vzan Automação Comercial organizada com sucesso !
+[2025-06-22T04:34:24.259+0000] {logging_mixin.py:188} INFO - Revenda Walltech Informatica organizada com sucesso !
+[2025-06-22T04:34:25.467+0000] {logging_mixin.py:188} INFO - Revenda W C Sistemas organizada com sucesso !
+[2025-06-22T04:34:26.638+0000] {logging_mixin.py:188} INFO - Revenda WGE informatica organizada com sucesso !
+[2025-06-22T04:34:27.853+0000] {logging_mixin.py:188} INFO - Revenda WMX Soluções em Tecnologia organizada com sucesso !
+[2025-06-22T04:34:29.084+0000] {logging_mixin.py:188} INFO - Revenda X1 Automação organizada com sucesso !
+[2025-06-22T04:34:29.163+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-06-22T04:34:29.180+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=DAG_atualizacao_cadastral_revendas, task_id=organized_response_database, execution_date=20250621T043000, start_date=20250622T043005, end_date=20250622T043429
+[2025-06-22T04:34:29.233+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-06-22T04:34:29.270+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
