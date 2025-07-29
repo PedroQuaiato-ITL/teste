@@ -19,7 +19,7 @@ echo "-----------------------------------------" >> "$arquivo"
 
 echo "=====> Dando permissões para as pastas da aplicação"
 cd /var/teste/airflow_architecture/airflow
-sudo chmod -R 775 dags logs plugins
+sudo chmod -R 775 dags logs
 
 echo "=====> Subindo Postgres e Redis..."
 docker compose -f docker-compose.yaml up -d postgres redis
