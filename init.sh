@@ -21,12 +21,6 @@ echo "=====> Dando permissões para as pastas da aplicação"
 cd /var/teste/airflow_architecture/airflow
 sudo chmod -R 775 dags logs
 
-echo "=====> Subindo Postgres e Redis..."
-docker compose -f docker-compose.yaml up -d postgres redis
-
-echo "=====> Esperando 20 segundos pro Postgres e Redis ficarem prontos..."
-sleep 20
-
 echo "=====> Rodando airflow-init..."
 docker compose -f docker-compose.yaml run --rm airflow-init
 
