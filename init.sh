@@ -42,6 +42,10 @@ fi
 echo "=====> Reiniciando Worker..."
 docker compose -f docker-compose.yaml restart airflow-worker
 
+echo "=====> Esperando 30 segundos pro Worker ficar pronto..."
+
+sleep 30
+
 echo "=====> Subindo Elastic..."
 cd /var/teste/infrastructure_architecture/infrastructure
 docker compose -f docker-compose-elastic.yaml up -d
