@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
-from airflow.models import Variable
+from Modules.PathLocation import PathLocation as path
 from airflow.utils.log.logging_mixin import LoggingMixin
 from Modules.DatabaseConfigurationConnection import DatabaseConfigurationConnection as HookConnection
 
@@ -12,7 +12,7 @@ class AnaliseDesempenhoRevendas(LoggingMixin):
     def executar_query_gnio(**kwargs):
         try:
             connection_database, _ = HookConnection.databaseConfigurationGnio()
-            sql = Variable.get('QUERY_REVENDAS_DESEMPENHO_GNIO')
+            sql = path.files_location_queries("query_select_revendas_desempenho_gnio.sql")
             df = pd.read_sql(sql, connection_database)
 
             json_data = df.to_json(orient='records')
@@ -52,7 +52,7 @@ class AnaliseDesempenhoRevendas(LoggingMixin):
     def executar_query_dataset(**kwargs):
         try:
             connection_database, _ = HookConnection.databaseConfigurationDataset()
-            sql = Variable.get('QUERY_REVENDAS_DESEMPENHO_RELATORIOS')
+            sql = path.files_location_queries("query_select_revendas_desempenho_relatorio.sql")
             df = pd.read_sql(sql, connection_database)
 
             df = df.sort_values(by='revenda')

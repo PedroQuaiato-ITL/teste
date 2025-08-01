@@ -25,7 +25,7 @@ echo "=====> Rodando airflow-init..."
 docker compose -f docker-compose.yaml run --rm airflow-init
 
 echo "=====> Esperando 10 segundos após airflow-init..."
-sleep 10
+sleep 10 
 
 echo "=====> Subindo Airflow stack..."
 docker compose -f docker-compose.yaml up -d
@@ -44,13 +44,6 @@ docker compose -f docker-compose.yaml restart airflow-worker
 
 echo "=====> Esperando 30 segundos pro Worker ficar pronto..."
 
-sleep 30
-
-echo "=====> Subindo Elastic..."
-cd /var/teste/infrastructure_architecture/infrastructure
-docker compose -f docker-compose-elastic.yaml up -d
-
-echo "=====> Esperando 30 segundos pro Elastic ficar pronto..."
 sleep 30
 
 echo "=====> Subindo NGINX HUB..."

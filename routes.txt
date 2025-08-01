@@ -1,0 +1,18 @@
+Rotas: interfaces graficas das ferramentas
+
+
+1º Airflow Web UI: port 8080                
+ 
+2º Postgres UI (PgAdmin) : port 5050        
+
+3º Redis Commander UI: port 8081            
+O
+4º Airflow Flores UI: port 5555             
+
+5º HUB Web UI: port 9090                    
+
+6º Projeto Mapa Vendas:port 3333            
+
+8º Prometheus docker UI: port 3000
+
+9º Zabbix UI: http://zabbix.intelidata.local/zabbix/zabbix.php?action=charts.view&view_as=showgraph&filter_search_type=0&filter_hostids%5B%5D=10344&filter_set=1

@@ -1,61 +1,74 @@
-/* Fundo */
 body, html {
-    background-color: #061a40;
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #061a40, #003559);
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Caixa externa para centralizar tudo */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
 .box-formater-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Caixa interna com o conteúdo */
 .box-internal-button {
-    background-color: #003559;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  background: #003559;
+  padding: 40px;
+  border-radius: 20px; /* Mais arredondado */
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4); /* Sombra mais suave */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s;
+}
+
+.box-internal-button:hover {
+  transform: translateY(-5px); /* Efeito leve de levitar */
 }
 
 button {
-    padding: 10px 20px;
-    width: 220px;
-    border: none;
-    border-radius: 5px;
-    background-color: #00bfff;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-size: 16px;
+  padding: 12px 25px;
+  width: 220px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00bfff, #009acd);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 button:hover {
-    background-color: #009acd;
+  background: linear-gradient(135deg, #009acd, #007aa3);
+  transform: translateY(-2px);
 }
 
 h3 {
-    color: white;
+  color: white;
 }
 
 .icon-btn {
-    font-size: 18px;
-    transition: color 0.3s;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
 button:hover .icon-btn {
-    color: #ffe600; /* Cor do ícone quando passa o mouse */
+  color: #ffe600;
 }

@@ -1,5 +1,5 @@
-from airflow.models import Variable
 from Modules.DatabaseConfigurationConnection import DatabaseConfigurationConnection as hook
+from Modules.PathLocation import PathLocation as path
 import uuid
 
 class DatasetLoadedDataMining:
@@ -8,7 +8,7 @@ class DatasetLoadedDataMining:
         conn = None
         cursor = None
         try:
-            query = Variable.get("QUERY_REVENDAS_CADASTRAL_GNIO")
+            query = path.files_location_queries("query_revendas_cadastral_gnio.sql")
             conn, cursor = hook.databaseConfigurationGnio()
             cursor.execute(query)
             resultados = cursor.fetchall()
@@ -60,9 +60,9 @@ class DatasetLoadedDataMining:
                 raise ValueError("Nenhum dado organizado disponível para inserção")
 
             conn, cursor = hook.databaseConfigurationDataset()
-            query_verify = Variable.get("QUERY_VERIFICADORA_INSERCAO_CADASTRAL")
-            query_insert = Variable.get("QUERY_INSERT_DATABASE_CADASTRAL")
-            query_update = Variable.get("QUERY_REVENDAS_CADASTRAL_UPDATE")
+            query_verify = path.files_location_queries("query_select_verificacao_cadastral.sql")
+            query_insert = path.files_location_queries("query_insert_table_cadastral_revendas.sql")
+            query_update = path.files_location_queries("query_update_revendas_cadastral.sql")
 
             for revenda in response_organized:
                 cursor.execute(query_verify, (revenda['revenda'],))
